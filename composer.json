@@ -13,11 +13,11 @@
   ],
   "require": {
     "drupal/add_content_by_bundle": "^1.2",
-    "drupal/address": ">=1.12",
+    "drupal/address": "^1.12",
     "drupal/address_map_link": "^1.4",
-    "drupal/geocoder": ">=4.23",
-    "drupal/geofield": ">=1.0",
-    "drupal/leaflet": ">=10.0",
+    "drupal/geocoder": "^4.23",
+    "drupal/geofield": "^1.0",
+    "drupal/leaflet": "^10.0",
     "geocoder-php/google-maps-provider": "^4.7",
     "geocoder-php/nominatim-provider": "^5.7"
   },
