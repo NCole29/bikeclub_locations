@@ -11,9 +11,6 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: '0'
-      label: "Don't know [restroom field will not be shown on the ride page]"
-    -
       value: '1'
       label: 'There are restrooms at the start.'
     -

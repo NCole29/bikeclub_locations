@@ -5,11 +5,6 @@ dependencies:
     - views.view.locations
   module:
     - views
-  theme:
-    - clubtheme
-  enforced:
-    module:
-    - club_location
 id: views_block__locations_ride_starts
 theme: clubtheme
 region: full_width_blocks
