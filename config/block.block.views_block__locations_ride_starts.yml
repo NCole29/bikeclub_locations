@@ -6,7 +6,7 @@ dependencies:
   module:
     - views
 id: views_block__locations_ride_starts
-theme: clubtheme
+theme: olivero
 region: full_width_blocks
 weight: -13
 provider: null
