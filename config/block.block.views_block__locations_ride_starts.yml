@@ -4,11 +4,14 @@ dependencies:
   config:
     - views.view.locations
   module:
+    - system
     - views
+  theme:
+    - olivero
 id: views_block__locations_ride_starts
 theme: olivero
-region: full_width_blocks
-weight: -13
+region: content_below
+weight: -9
 provider: null
 plugin: 'views_block:locations-ride_starts'
 settings:
@@ -18,4 +21,8 @@ settings:
   provider: views
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

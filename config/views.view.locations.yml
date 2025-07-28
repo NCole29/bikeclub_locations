@@ -3072,7 +3072,7 @@ display:
           empty: false
           content:
             value: '<span class="w3-xlarge">Here''s where our rides start</span><br>Click map markers to see place names and links to Google maps and routes from that location.<br>&nbsp;'
-            format: full_html
+            format: basic_html
           tokenize: false
       display_extenders: {  }
       block_description: 'Ride start locations'

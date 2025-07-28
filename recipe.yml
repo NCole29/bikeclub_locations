@@ -10,9 +10,12 @@ install:
   - add_content_by_bundle
   - address
   - address_map_link
-  - geocoder  
+  - geocoder
+  - geocoder_address
   - geocoder_field
+  - geocoder_geofield
   - geofield
+  - geofield_map
   - leaflet_views
 input:
   api:
@@ -26,6 +29,7 @@ input:
       source: value
       value: ''
 config:
+  strict: false
   actions:
     geocoder.geocoder_provider.googlemaps:
       createIfNotExists:
