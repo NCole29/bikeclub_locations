@@ -7,6 +7,8 @@ dependencies:
     - field.storage.node.field_location_type
     - system.menu.club-reports
     - taxonomy.vocabulary.locations
+  content:
+    - 'taxonomy_term:image_category:f557d619-3252-47cc-aad1-c59e88f7ec41'
   module:
     - add_content_by_bundle
     - address
@@ -341,7 +343,6 @@ display:
           data_source: field_coordinates
           entity_source: __base_table
           name_field: title
-          view_mode: full
           leaflet_map: 'OSM Mapnik'
           height: '60'
           height_unit: vh
@@ -386,8 +387,8 @@ display:
             circle_marker_options: '{"radius":6,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
           leaflet_markercluster:
             control: false
-            include_path: false
             options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
+            include_path: false
           fullscreen:
             control: true
             options: '{"position":"topleft","pseudoFullscreen":false}'
@@ -395,6 +396,7 @@ display:
           geocoder:
             control: false
             settings:
+              popup: false
               position: topright
               input_size: 25
               providers:
@@ -404,8 +406,8 @@ display:
               min_terms: 4
               delay: 800
               zoom: 16
-              popup: false
               options: ''
+          view_mode: full
           description_field: '#rendered_view_fields'
       row:
         type: fields
@@ -3071,7 +3073,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<span class="w3-xlarge">Here''s where our rides start</span><br>Click map markers to see place names and links to Google maps and routes from that location.<br>&nbsp;'
+            value: 'Click map markers to see place names and links to Google maps and routes from that location.'
             format: basic_html
           tokenize: false
       display_extenders: {  }
