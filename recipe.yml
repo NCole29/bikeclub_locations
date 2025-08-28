@@ -52,3 +52,26 @@ config:
         - 'edit any location content'
         - 'use text format basic_html'
         - 'use text format summary_fields'
+    view.view.content:  
+      addItemToDisplayOption:
+        display_id: 'page_1'
+        option: filters
+        type_1:
+          id: type_1
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: 'not in'
+          value:
+            location: location
+            recurring_dates: recurring_dates
+            recurring_ride: recurring_ride
+            ride: ride
+          group: 1
+          exposed: false
+          is_grouped: false
