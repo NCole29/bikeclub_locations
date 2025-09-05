@@ -52,6 +52,11 @@ config:
         - 'edit any location content'
         - 'use text format basic_html'
         - 'use text format summary_fields'
+    pathauto.pattern.content:
+      action: 'update' 
+      arguments:
+        bundles:
+          location: location
     view.view.content:  
       addItemToDisplayOption:
         display_id: 'page_1'
