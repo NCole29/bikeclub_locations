@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser2
+    - core.entity_view_mode.node.address
     - field.field.node.location.field_address
     - field.field.node.location.field_coordinates
     - field.field.node.location.field_location_info
@@ -13,17 +13,15 @@ dependencies:
     - address
     - address_map_link
     - layout_builder
-    - options
-    - text
     - user
 third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
-id: node.location.teaser2
+id: node.location.address
 targetEntityType: node
 bundle: location
-mode: teaser2
+mode: address
 content:
   field_address:
     type: address_default
@@ -38,21 +36,9 @@ content:
         map_link_new_window: true
     weight: 0
     region: content
-  field_location_info:
-    type: text_default
-    label: visually_hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_restrooms:
-    type: list_default
-    label: visually_hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
   field_coordinates: true
+  field_location_info: true
   field_location_type: true
+  field_restrooms: true
   links: true

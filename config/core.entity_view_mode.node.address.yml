@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.address
+label: Address
+description: 'Display Location name and address only'
+targetEntityType: node
+cache: true
