@@ -13,7 +13,7 @@ default:
       value: 'Event place'
   weight:
     -
-      value: 2
+      value: 0
   parent:
     -
       target_id: 0

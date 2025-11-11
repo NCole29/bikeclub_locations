@@ -50,9 +50,21 @@ config:
         - 'create location content'
         - 'delete any location content'
         - 'edit any location content'
-        - 'use text format basic_html'
-        - 'use text format summary_fields'
-    pathauto.pattern.content:
+    user.role.rides_coordinator:
+      createIfNotExists:
+        label: 'Rides coordinator'
+      grantPermissions:
+        - 'create location content'
+        - 'delete any location content'
+        - 'edit any location content'
+     user.role.ride_leader:
+      createIfNotExists:
+        label: 'Ride leader'
+      grantPermissions:
+        - 'create location content'
+        - 'delete own location content'
+        - 'edit own location content'
+  pathauto.pattern.content:
       simpleConfigUpdate:
         bundles:
           location: 'location'
