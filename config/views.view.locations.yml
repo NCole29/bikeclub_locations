@@ -5,10 +5,9 @@ dependencies:
     - field.storage.node.field_address
     - field.storage.node.field_coordinates
     - field.storage.node.field_location_type
-    - system.menu.club-reports
     - taxonomy.vocabulary.locations
   content:
-    - 'taxonomy_term:image_category:f557d619-3252-47cc-aad1-c59e88f7ec41'
+    - 'taxonomy_term:locations:7140df33-c8a0-43e1-930e-72dc64cb302d'
   module:
     - add_content_by_bundle
     - address
@@ -453,6 +452,7 @@ display:
     display_plugin: page
     position: 2
     display_options:
+      title: Locations
       fields:
         title:
           id: title
@@ -968,11 +968,13 @@ display:
           empty_table: false
           caption: ''
           description: ''
+          class: ''
       row:
         type: fields
         options: {  }
       defaults:
         access: false
+        title: false
         use_ajax: false
         pager: false
         style: false
@@ -999,7 +1001,7 @@ display:
           empty: true
           bundle: location
           class: 'button button--action button--primary'
-          target: tray
+          target: ''
           width: 600
           form_mode: null
           params: ''
@@ -1637,6 +1639,7 @@ display:
           empty_table: false
           caption: ''
           description: ''
+          class: ''
       row:
         type: fields
         options: {  }
@@ -2648,6 +2651,7 @@ display:
           empty_table: false
           caption: ''
           description: ''
+          class: ''
       row:
         type: fields
         options: {  }
@@ -3078,7 +3082,7 @@ display:
           tokenize: false
       display_extenders: {  }
       block_description: 'Ride start locations'
-      block_hide_empty: true                            
+      block_hide_empty: true
       allow:
         items_per_page: false
     cache_metadata:
