@@ -3,7 +3,7 @@ status: true
 dependencies:
 name: Location
 type: location
-description: '<em>Locations</em> are addresses available for selection when creating rides and events. Configure a <a href="/admin/config/system/geocoder/geocoder-provider">geocoder provider</a> to automatically geocode addresses for mapping.'
+description: '<em>Locations</em> are addresses available for selection when creating rides and events. They are automatically geocoded for mapping if a geocoder provider has been configured.'
 help: "<em>Locations</em> are addresses available for selection when creating rides and events.<br>\r\nA <a href=\"/admin/config/system/geocoder/geocoder-provider\">geocoder provider</a> must be configured to automatically geocode addresses for mapping."
 new_revision: false
 preview_mode: 1
